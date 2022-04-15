@@ -4,7 +4,7 @@ Ansible [NetApp.Ontap Collection](https://docs.ansible.com/ansible/latest/collec
 
 <br />
 
-## Install a CA signed certificate on Ontap System Manager
+## Install a CA Signed Certificate on Ontap System Manager
 
 <small>Source: [Install CA Signed Cert on System Manager](https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_install_a_Certificate_Authority_(CA)_signed_certificate_in_ONTAP_for_System_Manager_use)</small>
 
@@ -83,19 +83,22 @@ Caveats:
 
 <small>Source: [Ansible_is_not_able_to_connect_to_ONTAP](https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Ansible_is_not_able_to_connect_to_ONTAP)</small>
 
+
 __Error:__
 
 `An exception occurred during task execution. To see the full traceback, use -vvv. The error was: netapp_lib.api.zapi.zapi.NaApiError: NetApp API failed. Reason - Unable to connect:(ConnectionRefusedError(111, 'Connection refused'),)`
 
 <br>
 
+
 __Cause:__
 
 `Ansible is connecting via port 80, not port 443`
 
-http is disabled by default on NetApp Ontap.
+http is [disabled by default](https://library.netapp.com/ecmdocs/ECMP1196993/html/GUID-45B42EA2-E12A-45F4-9357-E441C82B2430.html) on NetApp Ontap.
 
 <br>
+
 
 __Solution:__
 
