@@ -4,6 +4,10 @@ Ansible [NetApp.Ontap Collection](https://docs.ansible.com/ansible/latest/collec
 
 <br />
 
+## Create Ontap Account for Ansible Automation 
+https://github.com/Rodri9o/NetApp_Ontap/blob/main/automation_account/ansible.md
+
+
 ## Install a CA Signed Certificate on Ontap System Manager
 
 <small>Source: [Install CA Signed Cert on System Manager](https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_install_a_Certificate_Authority_(CA)_signed_certificate_in_ONTAP_for_System_Manager_use)</small>
